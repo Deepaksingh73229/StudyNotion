@@ -51,7 +51,7 @@ export function About() {
                 <div className="absolute -top-24 -left-24 w-64 h-64 rounded-full bg-yellow-50 opacity-10 blur-[80px]"></div>
                 <div className="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-blue-500 opacity-10 blur-[100px]"></div>
                 
-                <div className="w-11/12 sm:w-10/12 mx-auto relative">
+                <div className="w-10/12 mx-auto relative">
                     <motion.div 
                         className="text-center flex flex-col pt-12 sm:pt-16 md:pt-20"
                         initial="hidden"
@@ -81,7 +81,7 @@ export function About() {
 
                 {/* Image Gallery - Responsive */}
                 <motion.div 
-                    className="w-11/12 sm:w-10/12 mx-auto flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-10 justify-center items-center"
+                    className="w-10/12 mx-auto flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-10 justify-center items-center"
                     initial="hidden"
                     animate="visible"
                     variants={staggerContainer}
@@ -104,7 +104,8 @@ export function About() {
                         whileHover={{ y: -10, transition: { duration: 0.3 } }}
                     >
                         <img 
-                            src={aboutImg2} 
+                            src={aboutImg2}
+                            loading="lazy"
                             alt="Tech education" 
                             className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" 
                         />
@@ -115,7 +116,8 @@ export function About() {
                         whileHover={{ y: -10, transition: { duration: 0.3 } }}
                     >
                         <img 
-                            src={aboutImg3} 
+                            src={aboutImg3}
+                            loading="lazy"
                             alt="Educational technology" 
                             className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" 
                         />
@@ -131,7 +133,7 @@ export function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
             >
-                <div className="w-11/12 sm:w-10/12 max-w-full md:max-w-[90%] lg:max-w-[80%] mx-auto text-center pb-10 md:pb-20">
+                <div className="w-10/12 max-w-full md:max-w-[90%] lg:max-w-[80%] mx-auto text-center pb-10 md:pb-20">
                     <motion.h2 
                         className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold px-4 leading-relaxed"
                         initial={{ opacity: 0, y: 30 }}
@@ -155,7 +157,7 @@ export function About() {
             </motion.div>
 
             {/* Founding Story Section */}
-            <div className="w-11/12 sm:w-10/12 mx-auto text-richblack-5 mb-16 md:mb-20">
+            <div className="w-10/12 mx-auto text-richblack-5 mb-16 md:mb-20">
                 <motion.div 
                     className="flex flex-col lg:flex-row justify-between items-center gap-10 mb-16 md:mb-32 lg:mb-60"
                     initial="hidden"
@@ -232,7 +234,7 @@ export function About() {
                 <div className="absolute -bottom-24 -right-24 w-64 h-64 rounded-full bg-pink-500 opacity-5 blur-[80px]"></div>
                 
                 <motion.div 
-                    className="w-11/12 sm:w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+                    className="w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
@@ -254,7 +256,7 @@ export function About() {
 
             {/* Features Grid Section */}
             <motion.div 
-                className="w-11/12 sm:w-10/12 mx-auto mb-16 md:mb-28 flex flex-col justify-center items-center"
+                className="w-10/12 mx-auto mb-16 md:mb-28 flex flex-col justify-center items-center"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

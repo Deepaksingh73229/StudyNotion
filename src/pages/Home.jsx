@@ -193,7 +193,7 @@ const Home = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5"></div>
 
                     <motion.div
-                        className="w-11/12 sm:w-10/12 max-w-fit mx-auto py-10 flex flex-col sm:flex-row items-center gap-5 sm:gap-10 text-white"
+                        className="w-10/12 max-w-fit mx-auto py-10 flex flex-col sm:flex-row items-center gap-5 sm:gap-10 text-white"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -204,7 +204,7 @@ const Home = () => {
                     </motion.div>
                 </motion.div>
 
-                <div className="w-11/12 sm:w-10/12 mx-auto py-12 md:py-20">
+                <div className="w-10/12 mx-auto py-12 md:py-20">
                     {/* Skills Heading Section */}
                     <motion.div
                         className="w-full flex flex-col justify-between gap-2 items-center"
@@ -346,7 +346,7 @@ const Home = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                         >
-                            <span>Your swiss knife for </span>
+                            <span className="text-richblack-700">Your swiss knife for </span>
                             <HighlightText value="learning any language" />
                         </motion.div>
 
@@ -387,7 +387,7 @@ const Home = () => {
             </div>
 
             {/* Instructor Section */}
-            <div className="w-11/12 sm:w-10/12 mx-auto py-10">
+            <div className="w-10/12 mx-auto py-10">
                 <motion.div
                     className="my-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-40"
                     initial={{ opacity: 0, y: 40 }}
@@ -418,7 +418,9 @@ const Home = () => {
                             Instructors from around the world teach millions of students on StudyNotion. We provide the tools and skills to teach what you love.
                         </p>
 
-                        <Button value="Start Teaching Today" clr={true} arrow={true} />
+                        <div className="grid place-items-center md:place-items-start lg:place-items-start">
+                            <Button value="Start Teaching Today" clr={true} arrow={true} />
+                        </div>
                     </motion.div>
                 </motion.div>
 

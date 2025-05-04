@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+StudyNotion Learning Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+About the Project:
 
-## Available Scripts
+StudyNotion is a comprehensive full-stack learning management system built with the MERN stack (MongoDB, Express.js, React, Node.js). It provides a platform for instructors to create and sell courses while allowing students to purchase and access educational content.
 
-In the project directory, you can run:
 
-### `npm start`
+Features
+User Authentication - Secure signup/login with email verification
+Role-Based Access - Different interfaces for students and instructors
+Course Management - Create, edit, delete, and organize courses into categories
+Content Delivery - Video lectures with progress tracking
+Payment Integration - Secure transactions via Razorpay
+User Dashboard - Track enrolled courses, purchase history, and learning progress
+Instructor Tools - Course analytics, student management, and content creation
+Responsive Design - Works seamlessly across devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technology Stack
+Frontend: React.js, Redux Toolkit, Tailwind CSS
+Backend: Node.js, Express.js
+Database: MongoDB (with Mongoose)
+Storage: Cloudinary (for media files)
+Authentication: JWT
+Payments: Razorpay
+Deployment: Vercel
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Database Model
+The application uses the following key data models:
 
-### `npm run build`
+User - Stores user information with role-based permissions
+Course - Contains course details, pricing, and relationship to instructor
+Section/SubSection - Hierarchical content organization
+CourseProgress - Tracks student completion status
+Category - Organizes courses by topic
+RatingAndReview - Student feedback system
+Payment - Records of transactions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Contact
+Deepak Kumar Singh - deepaksingh73229@gmail.com
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: https://github.com/Deepaksingh73229/studynotion

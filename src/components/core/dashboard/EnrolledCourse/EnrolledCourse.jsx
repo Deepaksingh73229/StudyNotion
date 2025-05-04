@@ -113,7 +113,7 @@ export function EnrolledCourse() {
 
     return (
         <motion.div
-            className="min-h-screen w-full max-w-[1000px] mx-auto px-4 pb-10 pt-0 md:pt-20 lg:pt-20 flex flex-col gap-6 sm:gap-10 text-richblack-50"
+            className="min-h-screen w-full max-w-[1000px] mx-auto px-4 pb-10 pt-10 md:pt-20 lg:pt-20 flex flex-col gap-6 sm:gap-10 text-richblack-50"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

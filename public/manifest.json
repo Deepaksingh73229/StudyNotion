@@ -1,78 +1,56 @@
 {
-    "name": "StudyNotion - Learning Management Platform",
-    "short_name": "StudyNotion",
-    "description": "A modern platform for online courses, learning resources, and educational content.",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#000814",
-    "theme_color": "#FFD60A",
-    "orientation": "any",
-    "categories": ["education", "learning", "courses"],
-    "lang": "en",
-    "dir": "ltr",
-    "icons": [
-      {
-        "src": "/favicon.ico",
-        "sizes": "64x64 32x32 24x24 16x16",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "/logo16.png",
-        "sizes": "16x16",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/logo32.png",
-        "sizes": "32x32",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/logo192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "any"
-      },
-      {
-        "src": "/logo512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any maskable"
-      }
-    ],
-    "screenshots": [
-      {
-        "src": "/desktop-screenshot.png",
-        "sizes": "1280x800",
-        "type": "image/png",
-        "form_factor": "wide",
-        "label": "Homepage of StudyNotion"
-      },
-      {
-        "src": "/mobile-screenshot.png",
-        "sizes": "750x1334",
-        "type": "image/png",
-        "form_factor": "narrow",
-        "label": "Homepage on mobile devices"
-      }
-    ],
-    "shortcuts": [
-      {
-        "name": "Browse Courses",
-        "short_name": "Courses",
-        "url": "/catalog",
-        "description": "Browse all available courses",
-        "icons": [{ "src": "/logo192.png", "sizes": "192x192" }]
-      },
-      {
-        "name": "My Dashboard",
-        "short_name": "Dashboard",
-        "url": "/dashboard",
-        "description": "View your learning dashboard",
-        "icons": [{ "src": "/logo192.png", "sizes": "192x192" }]
-      }
-    ],
-    "scope": "/",
-    "id": "studynotion-pwa"
-  }
+  "name": "StudyNotion - Learning Management Platform",
+  "short_name": "StudyNotion",
+  "description": "A modern platform for online courses, learning resources, and educational content.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000814",
+  "theme_color": "#FFD60A",
+  "orientation": "any",
+  "categories": [
+    "education",
+    "learning",
+    "courses"
+  ],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "scope": "/",
+  "id": "studynotion-pwa"
+}

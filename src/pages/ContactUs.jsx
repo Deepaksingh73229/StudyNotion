@@ -41,7 +41,7 @@ export function ContactUs() {
                 
                 {/* Page title */}
                 <motion.div 
-                    className="relative w-11/12 max-w-maxContent mx-auto text-center mb-10 md:mb-16"
+                    className="relative w-10/12 max-w-maxContent mx-auto text-center mb-10 md:mb-16"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -56,7 +56,7 @@ export function ContactUs() {
 
                 {/* Main content */}
                 <motion.div 
-                    className="w-11/12 max-w-maxContent mx-auto flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 text-richblack-5 relative"
+                    className="w-10/12 max-w-maxContent mx-auto flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 text-richblack-5 relative"
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
@@ -134,13 +134,13 @@ export function ContactUs() {
 
             {/* Map Section */}
             <motion.div 
-                className="w-11/12 max-w-maxContent mx-auto my-16"
+                className="w-10/12 max-w-maxContent mx-auto my-16"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
             >
-                <div className="bg-gradient-to-br from-richblack-800 to-richblack-700 p-4 rounded-2xl border border-richblack-600 shadow-lg overflow-hidden">
+                <div className="bg-gradient-to-br from-richblack-800 to-richblack-700 p-2 rounded-2xl border border-richblack-600 shadow-lg overflow-hidden">
                     <div className="relative pb-[56.25%] h-0 rounded-xl overflow-hidden">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.1758480077333!2d86.79593977486265!3d25.962272600289282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ee36d1a1bf4b45%3A0xd0d19cdb17887f59!2sB.%20P.%20Mandal%20College%20of%20Engineering%20Madhepura!5e0!3m2!1sen!2sin!4v1745001334764!5m2!1sen!2sin" 
@@ -157,7 +157,7 @@ export function ContactUs() {
 
             {/* FAQ Section */}
             <motion.div 
-                className="w-11/12 max-w-maxContent mx-auto my-16 text-center"
+                className="w-10/12 max-w-maxContent mx-auto my-16 text-center"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}

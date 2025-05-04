@@ -113,7 +113,7 @@ export function Footer() {
                 <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iLjAzIj48cGF0aCBkPSJNMzYgMzBhNiA2IDAgMSAxLTEyIDAgNiA2IDAgMCAxIDEyIDB6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
                 
                 <motion.div 
-                    className="w-11/12 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
+                    className="w-10/12 mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -149,7 +149,7 @@ export function Footer() {
             </div>
 
             <motion.footer 
-                className="w-11/12 max-w-6xl mx-auto flex flex-col gap-10 text-richblack-400 relative z-10 pt-16 pb-10"
+                className="w-10/12 mx-auto flex flex-col gap-10 text-richblack-400 relative z-10 pt-16 pb-10"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

@@ -119,7 +119,7 @@ function Cart() {
     return (
         <div className="min-h-[calc(100vh-3.5rem)] max-w-[1000px] mx-auto rounded-lg bg-gradient-to-b from-richblack-900 to-richblack-800 mb-5 pt-10 pb-10 md:pt-20 lg:pt-20 px-4">
             <motion.div 
-                className="max-w-[1200px] mx-auto flex flex-col gap-8 text-richblack-5"
+                className="max-w-[1000px] mx-auto flex flex-col gap-8 text-richblack-5"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"

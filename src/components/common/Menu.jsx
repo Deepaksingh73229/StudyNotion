@@ -50,7 +50,7 @@ export function Menu({ closeMenu }) {
 
     // Handle logout
     const handleLogout = () => {
-        dispatch(logout(navigate));
+        logout(dispatch, navigate)
         if (closeMenu) closeMenu();
     };
 
