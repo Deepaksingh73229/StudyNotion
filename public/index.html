@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Performance: Early hints and critical settings -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  
+  <!-- Essential SEO metadata -->
+  <title>StudyNotion - Learning Management Platform</title>
+  <meta name="description" 
+    content="StudyNotion is a comprehensive learning management platform with courses in programming, web development, design, and digital skills." />
+  <meta name="keywords"
+    content="learning platform, online courses, programming courses, web development, coding education, study online" />
+
+  <!-- PWA support -->
+  <meta name="theme-color" content="#FFD60A" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="StudyNotion">
+  
+  <!-- Icons -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/logo32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/logo16.png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  
+  <!-- Open Graph meta tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="StudyNotion - Modern Learning Management Platform" />
+  <meta property="og:description"
+    content="A comprehensive learning management platform with courses in programming, design, and more." />
+  <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+  
+  <!-- Resource optimization -->
+  <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" 
+    crossorigin="anonymous" />
+  
+  <!-- Modern font loading with font-display -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" 
+    rel="stylesheet" media="print" onload="this.media='all'" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="/" />
+</head>
+
+<body>
+  <!-- No-JS fallback -->
+  <noscript>
+    <div style="padding: 2rem; max-width: 600px; margin: 0 auto; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+      <img src="%PUBLIC_URL%/logo192.png" alt="StudyNotion Logo" style="max-width: 120px; margin-bottom: 1.5rem;">
+      <h1 style="margin-bottom: 1rem; color: #FFD60A;">JavaScript Required</h1>
+      <p style="line-height: 1.5; margin-bottom: 1rem;">StudyNotion requires JavaScript to provide an interactive learning experience. Please enable JavaScript in your browser settings to continue.</p>
+      <p style="font-size: 0.875rem;">If you need assistance, contact <a href="mailto:support@studynotion.com" style="color: #FFD60A;">support@studynotion.com</a></p>
+    </div>
+  </noscript>
+
+  <!-- React mount point -->
+  <div id="root"></div>
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "StudyNotion",
+      "description": "A comprehensive learning management platform offering various courses",
+      "url": "/",
+      "logo": "/logo512.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/"
+      }
+    }
+  </script>
+
+  <!-- Optimized service worker registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          })
+          .catch(error => {
+            console.error('ServiceWorker registration failed: ', error);
+          });
+      });
+      
+      // Handle service worker updates
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing) return;
+        refreshing = true;
+        window.location.reload();
+      });
+    }
+  </script>
+</body>
+</html>

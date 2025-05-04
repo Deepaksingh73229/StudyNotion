@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "buildCommand": "npm run build",
+    "outputDirectory": "build",
+    "builds": [
+      {
+        "src": "server/index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "server/index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "build/$1"
+      }
+    ]
+  }
