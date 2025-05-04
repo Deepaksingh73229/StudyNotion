@@ -30,7 +30,6 @@ export function EnrolledCourse() {
 
             if (result) {
                 setEnrolledCourses(result)
-                console.log("result: ", result)
             }
 
             setLoading(false)
