@@ -103,7 +103,7 @@ export function InstructorDashboard() {
 
     return (
         <motion.div
-            className="w-full max-w-[1000px] mx-auto pt-20 px-4 flex flex-col gap-6 md:gap-8 text-richblack-5"
+            className="w-full max-w-[1000px] mx-auto py-20 px-4 flex flex-col gap-6 md:gap-8 text-richblack-5"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

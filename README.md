@@ -2,6 +2,8 @@
 
 StudyNotion is a comprehensive full-stack learning management system built with the MERN stack (MongoDB, Express.js, React, Node.js). It provides a platform for instructors to create and sell courses while allowing students to purchase and access educational content.
 
+[**Link to website** -](https://studynotion-iota-rouge.vercel.app/)   https://studynotion-iota-rouge.vercel.app/
+
 
 ## Features
 

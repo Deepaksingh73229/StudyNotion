@@ -10,19 +10,26 @@ import { ChangeProfileImg } from "./ChangeProfileImg";
 import { ProfileInformation } from "./ProfileInformation";
 import { logout } from "../../../../services/operations/authAPI";
 import { deleteAccount } from "../../../../services/operations/settingsAPI";
+import toast from "react-hot-toast";
 
 export function Settings() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const { token } = useSelector((state) => state.auth);
+    const { user } = useSelector((state) => state.profile);
     const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
     const deleteAccountHandler = async () => {
+        if (user?.email === "student@mail.com" || user?.email === "instructor@mail.com") {
+            toast.error("This is a demo account. You cannot modify the data.")
+            return;
+        }
+
         try {
             await deleteAccount(token, dispatch, navigate)
             await logout(dispatch, navigate)
         }
-        catch(error){
+        catch (error) {
             console.error(error)
         }
     };
