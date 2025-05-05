@@ -3,27 +3,28 @@ const mailSender = require('../utils/mailSender')
 const emailTemplate = require("../mail/templates/emailVerificationTemplate");
 
 const otpSchema = new mongoose.Schema({
-    email : {
-        type : String,
-        required : true
+    email: {
+        type: String,
+        required: true
     },
 
-    otp : {
-        type : String,
-        required : true
+    otp: {
+        type: String,
+        required: true
     },
 
-    createdAt : {
-        type : Date,
-        default : Date.now(),
-        expires : new Date(Date.now() + 5 * 60 * 1000)   //minutes
+    // The expires option for mongoose expects a number of seconds after which the document should expire, not a date object.
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        expires: 300  // 5 minutes in seconds
     }
 })
 
 //Function to send mail
 async function sendVerificationMail (email, otp){
     try{
-        const mailResponse = await mailSender(email, "Verification Email from StudyNotion", emailTemplate(otp))
+        await mailSender(email, "Verification Email from StudyNotion", emailTemplate(otp))
         // console.log("Mail sent successfully: ", mailResponse)
     }
     catch(err){

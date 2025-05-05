@@ -221,7 +221,7 @@ exports.paymentSuccessEmail = (name, amount, orderId, paymentId) => {
     <body>
         <div class="email-wrapper">
             <div class="email-header">
-                <a href="https://studynotion-edtech-project.vercel.app">
+                <a href="https://studynotion-iota-rouge.vercel.app">
                     <img class="logo" src="https://res.cloudinary.com/dqhv83qhg/image/upload/v1746085347/Logo-Full-Light_wbydhl.png" alt="StudyNotion Logo">
                 </a>
             </div>
@@ -264,7 +264,7 @@ exports.paymentSuccessEmail = (name, amount, orderId, paymentId) => {
                 </div>
                 
                 <div class="cta-wrapper">
-                    <a href="https://studynotion-edtech-project.vercel.app/dashboard/enrolled-courses" class="cta-button">View My Courses</a>
+                    <a href="https://studynotion-iota-rouge.vercel.app/dashboard/enrolled-courses" class="cta-button">View My Courses</a>
                 </div>
                 
                 <div class="divider"></div>

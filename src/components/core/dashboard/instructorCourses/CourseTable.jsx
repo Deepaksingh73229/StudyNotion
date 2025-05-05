@@ -20,7 +20,7 @@ import { formatedDate } from "../../../../utils/dateFormatter";
 import { deleteCourse, fetchInstructorCourses } from "../../../../services/operations/courseAPI";
 
 export default function CourseTable({ courses, setCourses }) {
-    console.log("Courses", courses)
+    // console.log("Courses", courses)
     const navigate = useNavigate()
     const { token } = useSelector((state) => state.auth)
     const [confirmationModal, setConfirmationModal] = useState(null)

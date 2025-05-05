@@ -19,7 +19,7 @@ export function InstructorCourses() {
         const fetchCourses = async () => {
             setLoading(true)
             const result = await fetchInstructorCourses(token)
-            console.log(result)
+            // console.log(result)
 
             if (result) {
                 setCourses(result)

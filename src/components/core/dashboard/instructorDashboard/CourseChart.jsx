@@ -32,7 +32,7 @@ export function Coursechart({ dashboardData, chartType = 'revenue' }) {
                     color: generateColor(index),
                 })).filter(item => item.value > 0);
 
-                console.log("data -> ", data)
+                // console.log("data -> ", data)
             }
             else {
                 data = dashboardData.map((course, index) => ({
@@ -42,7 +42,7 @@ export function Coursechart({ dashboardData, chartType = 'revenue' }) {
                     color: generateColor(index),
                 })).filter(item => item.value > 0);
 
-                console.log("data -> ", data)
+                // console.log("data -> ", data)
             }
 
             if (data.length === 0) {

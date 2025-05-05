@@ -7,6 +7,7 @@ import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaDiscord } from "react-icons/fa";
 
 import logo from "../../assests/logos/Logo-Full-Light.png";
+import toast from "react-hot-toast";
 
 export function Footer() {
     const Resources = [
@@ -40,7 +41,8 @@ export function Footer() {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle newsletter submission
-        console.log("Subscribed with email:", email);
+        toast.success("Subscribed successfully! Check your email for updates.");
+        // console.log("Subscribed with email:", email);
         setEmail("");
     };
 

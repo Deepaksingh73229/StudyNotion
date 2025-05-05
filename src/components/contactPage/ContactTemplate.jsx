@@ -36,7 +36,7 @@ export function ContactTemplate({ title, desc }) {
     }, [reset, isSubmitSuccessful])
 
     function submitHandler(data) {
-        console.log("Form Data is -> ", data)
+        // console.log("Form Data is -> ", data)
         setIsSubmitting(true);
         dispatch(sendEnquiry(data))
     }

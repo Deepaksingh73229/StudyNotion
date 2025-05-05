@@ -293,7 +293,7 @@ export function MyProfile() {
                             className="space-y-2 p-4 rounded-lg hover:bg-richblack-700/40 transition-colors"
                             variants={infoItemVariants}
                         >
-                            <div className="font-medium lg:text-lg text-sm font-edu-sa flex gap-2">
+                            <div className="font-medium lg:text-lg text-sm font-mono flex gap-2">
                                 {/* <span className="text-3xl text-yellow-50/10 font-serif">"</span> */}
                                 <span>{user?.additionalDetails?.about || "Not Added"}</span>
                                 {/* <span className="items-end text-3xl text-yellow-50/10 font-serif">"</span> */}

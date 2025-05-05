@@ -61,14 +61,14 @@ export function TagField({
     };
 
     return (
-        <div className="w-full flex flex-col gap-2">
+        <div className="w-full flex flex-col gap-1">
             <label htmlFor={name} className="text-richblack-50 font-medium flex items-center gap-2">
                 <HiOutlineTag className="text-yellow-100" />
                 {label}
                 <sup className="text-pink-400">*</sup>
             </label>
 
-            <div className="bg-richblack-800 p-3 rounded-lg border-l-4 border-yellow-100 mb-3">
+            <div className="bg-richblack-800 p-3 rounded-lg border-l-4 border-yellow-100">
                 <p className="text-xs text-richblack-300">
                     Press Enter or comma after each tag to add it to the list
                 </p>

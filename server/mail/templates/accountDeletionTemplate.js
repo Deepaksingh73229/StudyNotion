@@ -349,9 +349,9 @@ exports.accountDeletionTemplate = (name) => {
                 </div>
                 
                 <div class="cta-wrapper">
-                    <a href="/signup" class="cta-button">Create New Account</a>
+                    <a href="https://studynotion-iota-rouge.vercel.app/signup" class="cta-button">Create New Account</a>
                     <br>
-                    <a href="https://studynotion-edtech-project.vercel.app/contact" class="secondary-cta">Provide Feedback</a>
+                    <a href="https://studynotion-iota-rouge.vercel.app/contact" class="secondary-cta">Provide Feedback</a>
                 </div>
                 
                 <div class="divider"></div>

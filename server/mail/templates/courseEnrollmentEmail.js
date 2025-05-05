@@ -233,7 +233,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
     <body>
         <div class="email-wrapper">
             <div class="email-header">
-                <a href="https://studynotion-edtech-project.vercel.app">
+                <a href="https://studynotion-iota-rouge.vercel.app">
                     <img class="logo" src="https://res.cloudinary.com/dqhv83qhg/image/upload/v1746085347/Logo-Full-Light_wbydhl.png" alt="StudyNotion">
                 </a>
             </div>
@@ -292,9 +292,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
                 
                 <div class="cta-wrapper">
                     <p>Ready to start learning?</p>
-                    <a class="cta" href="https://studynotion-edtech-project.vercel.app/dashboard/enrolled-courses">Go to My Courses</a>
-                    <br>
-                    <a class="secondary-cta" href="https://studynotion-edtech-project.vercel.app/dashboard">View Dashboard</a>
+                    <a class="cta" href="https://studynotion-iota-rouge.vercel.app/dashboard/enrolled-courses">Go to My Courses</a>
                 </div>
                 
                 <div class="divider"></div>

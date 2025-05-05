@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { FiUser, FiSave } from "react-icons/fi";
 
 import { updateProfile } from "../../../../services/operations/settingsAPI";
+import toast from "react-hot-toast";
 
 export function ProfileInformation() {
     const navigate = useNavigate();
@@ -44,6 +45,11 @@ export function ProfileInformation() {
     }, [reset, isSubmitSuccessful]);
 
     const submitHandler = async (data) => {
+        if(user?.email === "student@mail.com" || user?.email === "instructor@mail.com"){
+            toast.error("This is a demo account. You cannot modify the data.")
+            return;
+        }
+
         await updateProfile(data, token, dispatch, navigate)
     }
 

@@ -18,12 +18,12 @@ const mailSender = async (email, title, body) => {
             html : `${body}`
         })
 
-        if(info){
-            console.log("Mail send successfully")
-        }
-        else{
-            console.log("Failed to send mail")
-        }
+        // if(info){
+        //     console.log("Mail send successfully")
+        // }
+        // else{
+        //     console.log("Failed to send mail")
+        // }
     }
     catch(err){
         console.log("Error in mailSender!")

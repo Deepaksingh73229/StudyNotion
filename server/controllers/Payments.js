@@ -124,7 +124,7 @@ exports.verifySignature = async (req, res) => {
     // const webhookSecret = process.env.WEBHOOK_SECRET
     // const signature = req.headers["x-razorpay-signature"]
 
-    console.log("verifySignature", req.body)
+    // console.log("verifySignature", req.body)
 
     const razorpay_order_id = req.body?.razorpay_order_id
     const razorpay_payment_id = req.body?.razorpay_payment_id

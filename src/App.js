@@ -118,14 +118,26 @@ function App() {
           <Route path='/dashboard/settings' element={<Settings />} />
 
           {/* Students */}
-          <Route path='/dashboard/enrolled-courses' element={<EnrolledCourse />} />
-          <Route path='/dashboard/cart' element={<Cart />} />
+          {
+            user?.accountType === ACCOUNT_TYPE.STUDENT && (
+              <>
+                <Route path='/dashboard/cart' element={<Cart />} />
+                <Route path='/dashboard/enrolled-courses' element={<EnrolledCourse />} />
+              </>
+            )
+          }
 
           {/* Instructor */}
-          <Route path='/dashboard' element={<InstructorDashboard />} />
-          <Route path='/dashboard/add-course' element={<AddCourse />} />
-          <Route path='/dashboard/my-courses' element={<InstructorCourses />} />
-          <Route path='/dashboard/edit-course/:courseId' element={<EditCourse />} />
+          {
+            user?.accountType === ACCOUNT_TYPE.INSTRUCTOR && (
+              <>
+                <Route path='/dashboard' element={<InstructorDashboard />} />
+                <Route path='/dashboard/add-course' element={<AddCourse />} />
+                <Route path='/dashboard/my-courses' element={<InstructorCourses />} />
+                <Route path='/dashboard/edit-course/:courseId' element={<EditCourse />} />
+              </>
+            )
+          }
         </Route>
 
         {/* Course Module Dashboard -> For Student */}

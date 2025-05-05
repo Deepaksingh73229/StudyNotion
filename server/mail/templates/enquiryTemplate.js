@@ -227,7 +227,7 @@ exports.enquiryTemplate = (
     <body>
         <div class="email-wrapper">
             <div class="email-header">
-                <a href="https://studynotion-edtech-project.vercel.app">
+                <a href="https://studynotion-iota-rouge.vercel.app">
                     <img class="logo" src="https://res.cloudinary.com/dqhv83qhg/image/upload/v1746085347/Logo-Full-Light_wbydhl.png" alt="StudyNotion Logo">
                 </a>
             </div>
@@ -268,7 +268,7 @@ exports.enquiryTemplate = (
                 
                 <div class="cta-wrapper">
                     <p style="margin-bottom: 16px;">While you wait for our response, you might find what you're looking for in our resources:</p>
-                    <a href="https://studynotion-edtech-project.vercel.app/courses" class="cta-button">Browse Our Courses</a>
+                    <a href="https://studynotion-iota-rouge.vercel.app/courses" class="cta-button">Browse Our Courses</a>
                 </div>
                 
                 <div class="divider"></div>

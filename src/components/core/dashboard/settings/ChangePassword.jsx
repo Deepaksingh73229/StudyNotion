@@ -8,10 +8,12 @@ import { FiLock, FiSave } from "react-icons/fi";
 import { IoEyeOutline, IoEyeOffOutline } from "react-icons/io5";
 
 import { changePassword } from "../../../../services/operations/settingsAPI";
+import toast from "react-hot-toast";
 
 export function ChangePassword() {
     const navigate = useNavigate();
 
+    const { user } = useSelector((state) => state.profile);
     const { token } = useSelector((state) => state.auth);
     const [showPass1, setshowPass1] = useState(false);
     const [showPass2, setshowPass2] = useState(false);
@@ -33,6 +35,11 @@ export function ChangePassword() {
     }, [reset, isSubmitSuccessful]);
 
     const submitHandler = async (data) => {
+        if (user?.email === "student@mail.com" || user?.email === "instructor@mail.com") {
+            toast.error("This is a demo account. You cannot modify the data.")
+            return;
+        }
+
         await changePassword(data, token, navigate);
     }
 
@@ -165,11 +172,10 @@ export function ChangePassword() {
                 <motion.button
                     type="submit"
                     disabled={!isDirty}
-                    className={`px-5 py-2 rounded-md flex items-center gap-2 shadow-sm ${
-                        !isDirty
+                    className={`px-5 py-2 rounded-md flex items-center gap-2 shadow-sm ${!isDirty
                             ? "bg-yellow-100/50 text-richblack-500 cursor-not-allowed"
                             : "bg-yellow-50 hover:bg-yellow-100 text-richblack-900"
-                    }`}
+                        }`}
                     whileHover={isDirty ? { scale: 1.02 } : {}}
                     whileTap={isDirty ? { scale: 0.98 } : {}}
                 >
